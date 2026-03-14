@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zain Fateh | Portfolio</title>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --surface:#0f172a;
+      --card:#0c162b;
+      --line:#22304b;
+      --text:#e6edf6;
+      --muted:#a7b1c5;
+      --accent:#60a5fa;
+      --radius:14px;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      background:var(--surface);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      max-width:1100px;
+      margin:auto;
+      padding:1rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .nav a{
+      color:var(--text);
+      text-decoration:none;
+      margin-left:1rem;
+      font-weight:600;
+    }
+
+    section{
+      padding:4rem 1rem;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h1{
+      font-size:2.5rem;
+      margin-bottom:1rem;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:1.5rem;
+      border-bottom:1px solid var(--line);
+      padding-bottom:.5rem;
+    }
+
+    .intro-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:2rem;
+      align-items:center;
+    }
+
+    @media (max-width:800px){
+      .intro-grid{grid-template-columns:1fr;}
+    }
+
+    img{
+      width:100%;
+      border-radius:var(--radius);
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:1.5rem;
+      margin-bottom:2rem;
+    }
+
+    .project{
+      display:grid;
+      grid-template-columns:1fr 2fr;
+      gap:1.5rem;
+    }
+
+    @media (max-width:800px){
+      .project{grid-template-columns:1fr;}
+    }
+
+    footer{
+      background:var(--surface);
+      border-top:1px solid var(--line);
+      text-align:center;
+      padding:1.5rem;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <strong>Zain Fateh</strong>
+    <nav>
+      <a href="#intro">Intro</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= INTRO SECTION ================= -->
+<section id="intro">
+  <div class="container intro-grid">
+    
+    <div>
+      <h1>Future Biomolecular Engineer</h1>
+
+      <p>
+        I am a first‑year student majoring in <strong>Chemical and Biomolecular Engineering</strong> at the
+        <strong>University of New Haven</strong>. I am motivated by the potential of engineering at the molecular
+        level to improve healthcare outcomes and make life‑saving treatments more accessible.
+      </p>
+
+      <p>
+        I chose this field because I want to contribute to the development of medicines that are more effective,
+        have fewer side effects, and are more affordable. I am particularly interested in <strong>genetic
+        engineering</strong> and how engineered biological systems can be applied to modern pharmaceutical design.
+      </p>
+
+      <p>
+        Through introductory engineering coursework and laboratory experience, I am building a strong foundation
+        in chemical processes, teamwork, and technical documentation. I am also enrolled in <strong>AIML 2450</strong>,
+        where I am learning how artificial intelligence can support research, analysis, and engineering workflows.
+      </p>
+    </div>
+
+    <div>
+      <img src="assets/portrait.jpg" alt="Portfolio portrait">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="card project">
+      <img src="assets/soap-making.jpg" alt="Soap making laboratory experiment">
+
+      <div>
+        <h3>Soap‑Making Laboratory Experiment (CHME 1110)</h3>
+
+        <p><strong>Description:</strong> Conducted a hands‑on saponification experiment to synthesize soap while
+        following standard laboratory procedures and safety protocols.</p>
+
+        <p><strong>Skills Demonstrated:</strong> Laboratory safety, reaction monitoring, documentation,
+        collaboration.</p>
+
+        <p><strong>Tools & Techniques:</strong> Laboratory glassware, controlled mixing, data recording,
+        ChemDraw for reaction representation.</p>
+
+        <p><strong>What I Learned:</strong> Gained practical insight into chemical reaction behavior, sources of
+        experimental error, and the importance of reproducible documentation.</p>
+
+        <p><strong>Why This Shows My Potential:</strong> Demonstrates attention to fundamentals, safety awareness,
+        and the ability to translate experimental work into structured technical understanding.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card project">
+      <img src="assets/ctdot.png" alt="Connecticut Department of Transportation logo">
+
+      <div>
+        <h3>Sustainability Proposal for Connecticut Department of Transportation (EASC 1107)</h3>
+
+        <p><strong>Description:</strong> Developed a sustainability‑focused engineering proposal addressing
+        transportation infrastructure challenges for a real public‑sector organization.</p>
+
+        <p><strong>Skills Demonstrated:</strong> Systems thinking, teamwork, proposal writing, technical
+        communication.</p>
+
+        <p><strong>Tools & Techniques:</strong> Microsoft Excel for data analysis, Microsoft Visio for system
+        visualization, presentation software.</p>
+
+        <p><strong>What I Learned:</strong> Learned how to connect engineering concepts with environmental impact
+        and stakeholder needs.</p>
+
+        <p><strong>Why This Shows My Potential:</strong> Highlights the ability to apply classroom knowledge to
+        real‑world engineering contexts involving public infrastructure.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Zain Fateh
+</footer>
+
+</body>
+</html>
